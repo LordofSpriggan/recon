@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import requests
 import os
-import pyfiglet  # type: ignore
+import pyfiglet
 import subprocess
 import re
 import ipaddress
@@ -111,7 +111,7 @@ def nmap_results(ip_list):
 
 if __name__ == "__main__":
     os.system("clear")
-    banner = pyfiglet.figlet_format("Hacker Recon")
+    banner = pyfiglet.figlet_format("RECON . PY")
     print(banner)
     URL = input("[*] Enter URL: ")
     ip_list = nslookup(URL)
